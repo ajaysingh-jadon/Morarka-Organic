@@ -35,134 +35,7 @@
         /* ================= Certified Organic – Premium UI ================= */
 
 
-        /* Section Card */
-        .co-section {
-            background: var(--White);
-            border-radius: 18px;
-            margin-bottom: 60px;
-        }
-
-        /* Inner spacing */
-
-        /* Section title */
-        .co-title {
-            font-size: 34px;
-            font-weight: 700;
-            color: var(--Text-2);
-            margin-bottom: 24px;
-            position: relative;
-        }
-
-        .co-title::after {
-            content: "";
-            width: 64px;
-            height: 4px;
-            background: var(--Primary);
-            display: block;
-            margin-top: 12px;
-            border-radius: 2px;
-        }
-
-        /* Paragraphs */
-        .co-section p {
-            font-size: 16px;
-            line-height: 1.9;
-            color: var(--Text);
-            margin-bottom: 18px;
-        }
-
-        /* Tick list */
-        .co-list {
-            list-style: none;
-            padding: 0;
-            margin: 28px 0;
-        }
-
-        .co-list li {
-            position: relative;
-            padding-left: 34px;
-            margin-bottom: 16px;
-            font-size: 16px;
-            color: var(--Text-5);
-            line-height: 1.75;
-        }
-
-        .co-list li::before {
-            content: "\f00c";
-            font-family: "Font Awesome 6 Free";
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 2px;
-            color: var(--Text-4);
-            font-size: 14px;
-        }
-
-        /* Soft highlight section (Traceability) */
-        .co-traceability {
-            background: linear-gradient(180deg,
-                    var(--Bg-10),
-                    var(--Bg-3));
-        }
-
-        .organic-accordion .accordion-button {
-            background: var(--Bg-1);
-            font-weight: 600;
-            letter-spacing: 0.2px;
-        }
-
-        /* .organic-accordion .accordion-button:not(.collapsed) {
-            background: linear-gradient(90deg,
-                    var(--Bg-10),
-                    var(--Bg-3));
-
-        } */
-
-        .organic-accordion .accordion-body {
-            background: var(--White);
-        }
-
-        /* Responsive */
-        @media (max-width: 991px) {
-
-            .co-title {
-                font-size: 28px;
-            }
-        }
-
-        @media (max-width: 575px) {
-
-            .co-title {
-                font-size: 24px;
-            }
-
-            .co-section p,
-            .co-list li {
-                font-size: 15px;
-            }
-        }
-        .co-visual {
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 12px 28px rgba(13, 64, 28, 0.18);
-}
-
-.co-visual img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.co-checklist {
-  margin-top: 36px;
-  padding: 28px 32px;
-  background: var(--Bg-10);
-  border-radius: 16px;
-}
-
-/* .co-section:nth-of-type(even) {
-  background: var(--Bg-10);
-} */
+        
 
 
     </style>
@@ -624,7 +497,7 @@
     </div>
 
     <!-- ================= FOOTER ================= -->
-    <!-- PASTE YOUR EXISTING FOOTER HERE (UNCHANGED) -->
+   <div id="site-footer"></div>
 
     </div>
 
@@ -644,6 +517,7 @@
     <script type="text/javascript" src="js/gsap.min.js"></script>
     <script type="text/javascript" src="js/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="js/Splitetext.js"></script>
+     <script type="text/javascript" src="js/footer_load.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script>
         new Rellax(".rellax");
